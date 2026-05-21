@@ -1,0 +1,28 @@
+{
+  "name": "obsidian-teaching-plugin",
+  "version": "0.1.0",
+  "description": "Obsidian teaching assistant plugin for textbook-based explanations",
+  "main": "main.js",
+  "scripts": {
+    "build": "node esbuild.config.mjs production",
+    "dev": "node esbuild.config.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "obsidian",
+    "plugin",
+    "education",
+    "deepseek"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^25.2.1",
+    "esbuild": "^0.27.3",
+    "obsidian": "^1.11.4",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  }
+}

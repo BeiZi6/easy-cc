@@ -1,0 +1,10 @@
+{
+  "id": "teaching-assistant",
+  "name": "Teaching assistant",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Generate textbook-based knowledge explanations in a sidebar using DeepSeek-compatible APIs.",
+  "author": "xyu",
+  "authorUrl": "",
+  "isDesktopOnly": false
+}

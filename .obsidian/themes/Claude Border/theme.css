@@ -1,0 +1,251 @@
+@import url("../Border/theme.css");
+
+/* Claude Border: Claude-like warm derivative built on Border */
+
+body.theme-light,
+body.theme-dark {
+  --cb-button-size: 34px;
+  --cb-button-radius: 12px;
+}
+
+.theme-light {
+  --background-primary: #fbf6ef;
+  --background-primary-alt: #f6eee3;
+  --background-secondary: #f2e8da;
+  --background-secondary-alt: #eadcc9;
+  --background-tertiary: #dcc9b0;
+  --background-modifier-form-field: #fcf7f0;
+  --background-modifier-hover: rgba(118, 87, 62, 0.08);
+  --background-modifier-active-hover: rgba(118, 87, 62, 0.12);
+  --background-modifier-border: rgba(118, 87, 62, 0.12);
+  --background-modifier-border-hover: rgba(118, 87, 62, 0.18);
+  --background-modifier-message: rgba(202, 120, 67, 0.12);
+  --background-modifier-success: rgba(99, 144, 82, 0.14);
+  --text-normal: #352b23;
+  --text-muted: #6b5949;
+  --text-faint: #94806c;
+  --text-accent: #b76032;
+  --text-accent-hover: #9d4f26;
+  --interactive-accent: #ca7843;
+  --interactive-accent-hover: #b76032;
+  --interactive-accent-rgb: 202, 120, 67;
+  --tag-background: rgba(202, 120, 67, 0.11);
+  --tag-background-hover: rgba(202, 120, 67, 0.18);
+  --tag-color: #b76032;
+  --pill-background: rgba(202, 120, 67, 0.11);
+  --pill-background-hover: rgba(202, 120, 67, 0.18);
+  --pill-color: #b76032;
+  --blockquote-border-color: #cf8456;
+  --blockquote-background-color: rgba(207, 132, 86, 0.08);
+  --code-background: #efe3d2;
+  --code-normal: #4a3d31;
+  --code-comment: #8d7b6c;
+  --code-function: #92521f;
+  --code-keyword: #b34f40;
+  --code-property: #2d6886;
+  --code-string: #356a58;
+  --code-value: #855196;
+  --cb-shell: #f5ece0;
+  --cb-panel: #f7efe4;
+  --cb-button-bg: #f3eadf;
+  --cb-button-hover: #f8f0e6;
+  --cb-button-active: #fffaf2;
+  --cb-button-border: rgba(118, 87, 62, 0.08);
+  --cb-button-active-border: rgba(118, 87, 62, 0.14);
+}
+
+.theme-dark {
+  --background-primary: #1b1613;
+  --background-primary-alt: #231d19;
+  --background-secondary: #17120f;
+  --background-secondary-alt: #110d0b;
+  --background-tertiary: #2f2621;
+  --background-modifier-form-field: #29211d;
+  --background-modifier-hover: rgba(236, 221, 206, 0.08);
+  --background-modifier-active-hover: rgba(236, 221, 206, 0.12);
+  --background-modifier-border: rgba(236, 221, 206, 0.12);
+  --background-modifier-border-hover: rgba(236, 221, 206, 0.18);
+  --background-modifier-message: rgba(223, 138, 87, 0.14);
+  --background-modifier-success: rgba(99, 144, 82, 0.16);
+  --text-normal: #eaded0;
+  --text-muted: #baa594;
+  --text-faint: #8d786b;
+  --text-accent: #eea274;
+  --text-accent-hover: #f4b892;
+  --interactive-accent: #df8a57;
+  --interactive-accent-hover: #eea274;
+  --interactive-accent-rgb: 223, 138, 87;
+  --tag-background: rgba(223, 138, 87, 0.14);
+  --tag-background-hover: rgba(223, 138, 87, 0.22);
+  --tag-color: #eea274;
+  --pill-background: rgba(223, 138, 87, 0.14);
+  --pill-background-hover: rgba(223, 138, 87, 0.22);
+  --pill-color: #eea274;
+  --blockquote-border-color: #c77b4d;
+  --blockquote-background-color: rgba(199, 123, 77, 0.12);
+  --code-background: #231c19;
+  --code-normal: #e2d5c7;
+  --code-comment: #87766a;
+  --code-function: #e7b07d;
+  --code-keyword: #ef8d79;
+  --code-property: #87b0cf;
+  --code-string: #81bea8;
+  --code-value: #c7a0d8;
+  --cb-shell: #241d19;
+  --cb-panel: #1d1815;
+  --cb-button-bg: #2a231f;
+  --cb-button-hover: #342b26;
+  --cb-button-active: #41362f;
+  --cb-button-border: rgba(236, 221, 206, 0.08);
+  --cb-button-active-border: rgba(236, 221, 206, 0.14);
+}
+
+body {
+  --divider-color: var(--background-modifier-border);
+  --divider-color-hover: rgba(var(--interactive-accent-rgb), 0.7);
+  --text-selection: rgba(var(--interactive-accent-rgb), 0.18);
+  --metadata-label-text-color: var(--text-faint);
+  --metadata-input-text-color: var(--text-normal);
+  --checkbox-color: var(--interactive-accent);
+  --checkbox-color-hover: var(--interactive-accent-hover);
+  --checkbox-marker-color: #fff8f1;
+  --link-color: var(--text-accent);
+  --link-color-hover: var(--text-accent-hover);
+}
+
+body:not(.is-mobile) .app-container,
+body:not(.is-mobile) .workspace {
+  background: var(--background-primary-alt);
+}
+
+body:not(.is-mobile) .workspace-ribbon,
+body:not(.is-mobile) .workspace-drawer,
+body:not(.is-mobile) .workspace-tab-container,
+body:not(.is-mobile) .view-header,
+body:not(.is-mobile) .nav-header,
+body:not(.is-mobile) .workspace-drawer-header,
+body:not(.is-mobile) .workspace-drawer-active-tab-header,
+body:not(.is-mobile) .search-input-container {
+  background: var(--cb-panel);
+}
+
+body:not(.is-mobile) .workspace-ribbon,
+body:not(.is-mobile) .workspace-drawer,
+body:not(.is-mobile) .workspace-tab-container {
+  box-shadow: none !important;
+}
+
+body:not(.is-mobile) .workspace-ribbon,
+body:not(.is-mobile) .workspace-drawer,
+body:not(.is-mobile) .workspace-tab-container,
+body:not(.is-mobile) .status-bar {
+  outline: 1px solid rgba(255, 255, 255, 0.02);
+  outline-offset: -1px;
+}
+
+.workspace-ribbon .side-dock-ribbon-action,
+.workspace-ribbon .workspace-ribbon-collapse-btn,
+.view-actions .clickable-icon,
+.nav-buttons-container .clickable-icon,
+.workspace-tab-header-new-tab,
+.workspace-tab-header-tab-list,
+.sidebar-toggle-button,
+.search-input-clear-button,
+.workspace-tabs .clickable-icon:not(.workspace-tab-header-inner-close-button) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--cb-button-size);
+  min-width: var(--cb-button-size);
+  height: var(--cb-button-size);
+  min-height: var(--cb-button-size);
+  padding: 0 !important;
+  border-radius: var(--cb-button-radius) !important;
+  background: var(--cb-button-bg) !important;
+  border: 1px solid var(--cb-button-border) !important;
+  box-shadow: none !important;
+  transition:
+    background-color 140ms ease,
+    border-color 140ms ease,
+    color 140ms ease,
+    transform 140ms ease;
+}
+
+.workspace-ribbon .side-dock-ribbon-action:hover,
+.workspace-ribbon .workspace-ribbon-collapse-btn:hover,
+.view-actions .clickable-icon:hover,
+.nav-buttons-container .clickable-icon:hover,
+.workspace-tab-header-new-tab:hover,
+.workspace-tab-header-tab-list:hover,
+.sidebar-toggle-button:hover,
+.search-input-clear-button:hover,
+.workspace-tabs .clickable-icon:not(.workspace-tab-header-inner-close-button):hover {
+  background: var(--cb-button-hover) !important;
+  border-color: var(--cb-button-active-border) !important;
+  transform: translateY(-1px);
+}
+
+.workspace-ribbon .side-dock-ribbon-action.is-active,
+.workspace-ribbon .side-dock-ribbon-action.mod-active,
+.workspace-ribbon .workspace-ribbon-collapse-btn.is-active,
+.workspace-ribbon .workspace-ribbon-collapse-btn.mod-active,
+.view-actions .clickable-icon.is-active,
+.view-actions .clickable-icon.mod-active,
+.view-actions .clickable-icon[aria-pressed="true"],
+.nav-buttons-container .clickable-icon.is-active,
+.nav-buttons-container .clickable-icon.mod-active,
+.nav-buttons-container .clickable-icon[aria-pressed="true"],
+.workspace-tab-header-new-tab.is-active,
+.workspace-tab-header-tab-list.is-active,
+.sidebar-toggle-button.is-active,
+.search-input-clear-button.is-active,
+.workspace-tabs .clickable-icon:not(.workspace-tab-header-inner-close-button).is-active,
+.workspace-tabs .clickable-icon:not(.workspace-tab-header-inner-close-button).mod-active,
+.workspace-tabs .clickable-icon:not(.workspace-tab-header-inner-close-button)[aria-pressed="true"] {
+  background: var(--cb-button-active) !important;
+  border-color: var(--cb-button-active-border) !important;
+  color: var(--text-normal) !important;
+}
+
+.workspace-tab-header.is-active .workspace-tab-header-inner {
+  background: var(--cb-button-active) !important;
+  border-color: var(--cb-button-active-border) !important;
+  box-shadow: none !important;
+}
+
+.workspace-tab-header-inner-close-button {
+  width: 26px;
+  min-width: 26px;
+  height: 26px;
+  min-height: 26px;
+  padding: 0 !important;
+  border-radius: 10px !important;
+  background: transparent !important;
+  border: 1px solid transparent !important;
+  box-shadow: none !important;
+}
+
+.workspace-tab-header:hover .workspace-tab-header-inner-close-button,
+.workspace-tab-header.is-active .workspace-tab-header-inner-close-button:hover {
+  background: var(--cb-button-hover) !important;
+  border-color: var(--cb-button-border) !important;
+}
+
+.status-bar {
+  background: var(--cb-panel) !important;
+  border: 1px solid var(--cb-button-border) !important;
+  box-shadow: none !important;
+}
+
+.markdown-rendered blockquote {
+  background: var(--blockquote-background-color);
+  border-inline-start: 3px solid var(--blockquote-border-color);
+}
+
+.markdown-rendered pre,
+.HyperMD-codeblock,
+.cm-inline-code,
+code {
+  background: var(--code-background);
+  border-color: var(--background-modifier-border);
+}

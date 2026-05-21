@@ -1,0 +1,283 @@
+{
+  "main": {
+    "id": "77f5113d318e1580",
+    "type": "split",
+    "children": [
+      {
+        "id": "67edeba7500eadae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3c39d889d4895ff0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "复试相关/冲刺/2025真题答案详解.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025真题答案详解"
+            }
+          }
+        ]
+      },
+      {
+        "id": "557da15ed2bf44b0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "53452752e2e03ddc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "复试相关/冲刺/重点专项突破.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "重点专项突破"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9e519f1b4590b46f",
+    "type": "split",
+    "children": [
+      {
+        "id": "e6c9cc04ebf8ea2b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7f98b8e3e9c0bbe5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "b564ab446c6a1253",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "通信原理教材",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "7c27f0ca21c9d2c2",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "805b30178e016e12",
+    "type": "split",
+    "children": [
+      {
+        "id": "d2ba7c6baa79a683",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e1aa32248a2a64c2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "803初试相关/初试大纲.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "初试大纲 的反向链接列表"
+            }
+          },
+          {
+            "id": "52d29237d8fc7b9b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "803初试相关/初试大纲.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "初试大纲 的出链列表"
+            }
+          },
+          {
+            "id": "c70d7ee8ae8abef0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "e6e2a272cc131f22",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "5fffae4a84cbeace",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "复试相关/通信电子线路/通信电子线路-Study-Vault/01-通信电子线路概述/core-concepts.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "core-concepts 的大纲"
+            }
+          },
+          {
+            "id": "e3e14e6ea8545a1e",
+            "type": "leaf",
+            "state": {
+              "type": "teaching-assistant-view",
+              "state": {},
+              "icon": "graduation-cap",
+              "title": "Teaching assistant"
+            }
+          },
+          {
+            "id": "d94cda5f1f2ae80d",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {},
+              "icon": "bot",
+              "title": "Claudian"
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 651.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian42-brat:BRAT": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "claudian:Open Claudian": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "teaching-assistant:Open teaching assistant": false
+    }
+  },
+  "active": "53452752e2e03ddc",
+  "lastOpenFiles": [
+    "复试相关/冲刺/必背公式清单.md",
+    "复试相关/冲刺/高频考点速查.md",
+    "复试相关/冲刺/3025复试(1).pdf",
+    "复试相关/冲刺/重点专项突破.md",
+    "复试相关/冲刺/2025真题答案详解.md",
+    "复试相关/通信电子线路/第五章-正弦波振荡器-答案.md",
+    "复试相关/冲刺/三本教材/数字信号处理/离散时间信号与系统及其频域分析.pdf",
+    "复试相关/冲刺/三本教材/数字信号处理/有限长冲激响应（FIR）数字滤波.pdf",
+    "复试相关/冲刺/三本教材/数字信号处理/无限长冲激序列数字滤波器(IIR).pdf",
+    "复试相关/冲刺/三本教材/数字信号处理/数字信号处理笔记汇总.md",
+    "复试相关/冲刺/三本教材/数字信号处理/快速傅立叶变换.pdf",
+    "复试相关/冲刺/三本教材/数字信号处理/Z变换及其应用.pdf",
+    "复试相关/冲刺/三本教材/数字信号处理",
+    "复试相关/冲刺/三本教材/images/8f3800954d0a8285895da1d24eff026c5712af76e905d4594bd566759c294c20.jpg",
+    "复试相关/冲刺/三本教材/images/156e7cbbe4f6b3b86ce9a069ece83d38d37d10ce8bf089d111647b5f9bb5e8b2.jpg",
+    "复试相关/冲刺/三本教材/images/96a7bbd414407210e6b948a76a180fe8342169721d978b7238254c9c776d930c.jpg",
+    "复试相关/冲刺/三本教材/images/9a649223cb7c83c8c838fc5b6c197234ed0195efd9adf3a4e8d977bb9275fda0.jpg",
+    "复试相关/冲刺/三本教材/images/67c05219390faef639ec4aba2e4c794b3a0f994d18bd0add67557a3caafe8ea5.jpg",
+    "复试相关/冲刺/三本教材/images/c65784a98c88d08e81fbd67e43635922d5cf7e03ec3612c1b74ff06908d174f9.jpg",
+    "复试相关/冲刺/三本教材/images/37cde4255bfe79d3eb60a546aec9598e38221588d7527eef3953aec7ee845dc5.jpg",
+    "复试相关/冲刺/三本教材/images/fd9b954cbcd523dbbce2dde09a95db79ce4cd32a5d933f165cdc53be16d18787.jpg",
+    "复试相关/冲刺/三本教材/images/0fb861d98e039c352e90d4c5dd3be93b3258c414793626d6c5e19865a2a630ea.jpg",
+    "复试相关/冲刺/三本教材/images/e0ff527200acd3b4acb14f5e251a3467d1a881772cfaec1601f12988495dacfd.jpg",
+    "复试相关/冲刺/三本教材/images",
+    "复试相关/冲刺/三本教材/通信原理教材.md",
+    "复试相关/通信电子线路/课本资料/通信电子线路考试大纲.md",
+    "复试相关/冲刺/三本教材/通信电子线路.md",
+    "复试相关/冲刺/三本教材/考试大纲.md",
+    "复试相关/冲刺/三本教材",
+    "复试相关/冲刺/教材",
+    "复试相关/通信电子线路/第六章-振幅调制与检波-考点精讲.md",
+    "复试相关/通信电子线路/最后一页.md",
+    "复试相关/通信电子线路/gpt副本.md",
+    "复试相关/通信原理/教材文件/通信原理教材.md",
+    "复试相关/通信原理/草稿纸.md",
+    "复试相关/通信电子线路/课本资料/考试大纲.md",
+    "复试相关/通信原理/往年真题答案与知识点讲解.md",
+    "复试相关/通信原理/通信原理 课程笔记（不遗漏版）.md",
+    "复试相关/通信原理/通信原理 全29讲 详尽笔记（最终定稿版）.md",
+    "毕业设计/中期答辩稿.md",
+    "社论/2026-01-30_伪成熟文案与校园恋爱_草稿.md",
+    "2603.15031-Attention-Residuals-论文解析.md",
+    "2603.15031-Attention-Residuals-小红书版.md",
+    "复试相关/数字信号处理笔记/数字信号处理笔记汇总.md",
+    "OpenMAIC/lib/generation/prompts/templates/slide-content/user.md",
+    "未命名.canvas",
+    "复试相关/通信电子线路/Codex笔记/第1章 通信电子线路概述/第1章 通信电子线路概述.canvas",
+    "Obsidian-Notes/通信电子线路/第1章 通信电子线路概述/第1章 通信电子线路概述.canvas"
+  ]
+}

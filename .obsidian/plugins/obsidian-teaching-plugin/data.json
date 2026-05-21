@@ -1,0 +1,236 @@
+{
+  "settings": {
+    "apiBaseUrl": "https://api.deepseek.com/v1",
+    "apiKey": "REMOVED_LEAKED_KEY",
+    "model": "deepseek-reasoner",
+    "textbookFolder": "/Users/xyu/哈工大803信息与通信工程/复试相关/通信电子线路/课本资料",
+    "maxContextChars": 6000,
+    "requestTimeoutMs": 1000000000,
+    "maxSources": 3,
+    "dailyReviewTarget": 20,
+    "quizQuestionCount": 10,
+    "autoOpenQuizAfterExplain": true,
+    "wrongNotebookFolder": "错题本",
+    "enableRetryOnTimeout": true,
+    "temperature": 0.2
+  },
+  "learning": {
+    "schemaVersion": 1,
+    "quizSessions": {
+      "id-wybqwcri": {
+        "id": "id-wybqwcri",
+        "question": "请解释超外差接收机",
+        "items": [
+          {
+            "id": "id-faomb5qp",
+            "type": "single_choice",
+            "stem": "超外差接收机的主要特点是什么？",
+            "options": [
+              "直接将接收信号放大",
+              "将载波频率变换为固定的中频",
+              "使用多个振荡器",
+              "没有中频放大器"
+            ],
+            "correctAnswer": "将载波频率变换为固定的中频",
+            "explanation": "超外差接收机先把接收到的已调波信号的载波频率变换为频率较低或较高且固定不变的中间频率（中频），然后进行放大和解调。",
+            "sourceIds": [
+              "S4"
+            ],
+            "knowledgeTags": [
+              "超外差接收机",
+              "特点"
+            ],
+            "difficulty": 2
+          },
+          {
+            "id": "id-ag4aqknd",
+            "type": "single_choice",
+            "stem": "超外差接收机相对于直接放大式接收机的主要优点是什么？",
+            "options": [
+              "结构简单",
+              "成本低",
+              "增益高且选择性好",
+              "无需本振"
+            ],
+            "correctAnswer": "增益高且选择性好",
+            "explanation": "超外差接收机的中频放大器中心频率固定，整机增益由中频放大器承担，在接收频率范围内增益变化小，可以实现较高的放大倍数，选择性也容易满足。",
+            "sourceIds": [
+              "S6"
+            ],
+            "knowledgeTags": [
+              "超外差接收机",
+              "优点"
+            ],
+            "difficulty": 2
+          },
+          {
+            "id": "id-7988gmov",
+            "type": "single_choice",
+            "stem": "在超外差接收机中，本地振荡器的主要作用是什么？",
+            "options": [
+              "产生载波信号",
+              "产生中频信号",
+              "与接收信号混频",
+              "放大信号"
+            ],
+            "correctAnswer": "与接收信号混频",
+            "explanation": "本地振荡器产生本地振荡信号，与接收的高频信号进行混频，得到中频信号。",
+            "sourceIds": [
+              "S3"
+            ],
+            "knowledgeTags": [
+              "本地振荡器",
+              "混频"
+            ],
+            "difficulty": 2
+          },
+          {
+            "id": "id-j8kocdr4",
+            "type": "single_choice",
+            "stem": "超外差接收机中，中频的主要作用是什么？",
+            "options": [
+              "提高信号频率",
+              "固定频率便于放大和滤波",
+              "直接解调",
+              "降低功耗"
+            ],
+            "correctAnswer": "固定频率便于放大和滤波",
+            "explanation": "中频是固定不变的频率，使得放大器可以针对固定频率设计，从而获得高增益和好选择性。",
+            "sourceIds": [
+              "S4"
+            ],
+            "knowledgeTags": [
+              "中频",
+              "作用"
+            ],
+            "difficulty": 2
+          },
+          {
+            "id": "id-8mf3uqo2",
+            "type": "true_false",
+            "stem": "在超外差接收机中，组合干扰是由于非线性器件产生的多个频率分量落入中频通带内引起的。",
+            "options": [
+              "True",
+              "False"
+            ],
+            "correctAnswer": "True",
+            "explanation": "组合干扰是由于混频器的非线性特性，使得输入信号和本振信号的谐波组合产生接近中频的频率分量，从而造成干扰。",
+            "sourceIds": [
+              "S1"
+            ],
+            "knowledgeTags": [
+              "组合干扰",
+              "非线性"
+            ],
+            "difficulty": 2
+          },
+          {
+            "id": "id-uuaa0t2h",
+            "type": "single_choice",
+            "stem": "在超外差接收机中，收听某个信号时听到哨叫声，可能的原因是什么？",
+            "options": [
+              "中频放大器故障",
+              "本振频率与信号频率组合产生音频哨叫",
+              "天线问题",
+              "电源噪声"
+            ],
+            "correctAnswer": "本振频率与信号频率组合产生音频哨叫",
+            "explanation": "哨叫声通常是由于组合干扰，当本振频率与信号频率的某些组合差拍落入音频范围内时，会产生哨叫声。",
+            "sourceIds": [
+              "S2"
+            ],
+            "knowledgeTags": [
+              "哨叫声",
+              "组合干扰"
+            ],
+            "difficulty": 2
+          },
+          {
+            "id": "id-b958jz47",
+            "type": "true_false",
+            "stem": "在超外差接收机中，本振频率总是大于信号频率。",
+            "options": [
+              "True",
+              "False"
+            ],
+            "correctAnswer": "False",
+            "explanation": "本振频率可以大于或小于信号频率，取决于中频的选择。常见的是f_L > f_s，但也可以f_L < f_s，只要混频后得到中频。",
+            "sourceIds": [
+              "S1",
+              "S2"
+            ],
+            "knowledgeTags": [
+              "本振频率",
+              "信号频率"
+            ],
+            "difficulty": 2
+          },
+          {
+            "id": "id-ad0veuix",
+            "type": "true_false",
+            "stem": "在超外差接收机中，正弦波振荡器用于产生本地振荡信号。",
+            "options": [
+              "True",
+              "False"
+            ],
+            "correctAnswer": "True",
+            "explanation": "根据片段S3，在超外差接收机中，正弦波振荡器用来产生“本地振荡”信号以便与接收的高频信号进行混频。",
+            "sourceIds": [
+              "S3"
+            ],
+            "knowledgeTags": [
+              "正弦波振荡器",
+              "本地振荡"
+            ],
+            "difficulty": 2
+          },
+          {
+            "id": "id-4pb3bro3",
+            "type": "single_choice",
+            "stem": "在超外差接收机中，组合干扰通常与什么有关？",
+            "options": [
+              "信号频率和本振频率的谐波",
+              "中频频率的稳定性",
+              "放大器的增益",
+              "天线的方向性"
+            ],
+            "correctAnswer": "信号频率和本振频率的谐波",
+            "explanation": "组合干扰是由于信号频率和本振频率的谐波通过非线性混频产生的频率分量落入中频通带内引起的。",
+            "sourceIds": [
+              "S1"
+            ],
+            "knowledgeTags": [
+              "组合干扰",
+              "谐波"
+            ],
+            "difficulty": 2
+          },
+          {
+            "id": "id-rklr93vf",
+            "type": "single_choice",
+            "stem": "某超外差接收机中频f_I=500kHz，本振频率f_L < f_s，在收听f_s=1.501MHz的信号时听到哨叫声，最可能的原因是什么？",
+            "options": [
+              "中频偏移",
+              "镜像干扰",
+              "组合干扰产生音频哨叫",
+              "信号过强"
+            ],
+            "correctAnswer": "组合干扰产生音频哨叫",
+            "explanation": "根据S2，当本振频率与信号频率的组合产生差拍信号落入音频范围时，会产生哨叫声。",
+            "sourceIds": [
+              "S2"
+            ],
+            "knowledgeTags": [
+              "哨叫声",
+              "组合干扰"
+            ],
+            "difficulty": 2
+          }
+        ],
+        "createdAt": 1770551251311
+      }
+    },
+    "attempts": [],
+    "reviewTasks": []
+  }
+}
