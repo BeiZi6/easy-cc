@@ -1,7 +1,7 @@
 ---
 title: Token 成本控制
 tags: [claude-code, 避坑, 成本]
-updated: 2026-05-21
+updated: 2026-05-25
 ---
 
 # Token 成本控制
@@ -37,7 +37,8 @@ updated: 2026-05-21
 - **关无用 skill**：description 也是 token
 
 ### 监控
-- `/cost` 实时看
+- `/cost` 实时看本会话花费
+- `/usage` 看额度用量的**分类明细**——按 skills / subagents / plugins / 各 MCP server 拆分，一眼看出钱花在哪（v2.1.149+）
 - `rtk gain` 看 token 节省（如果装了 RTK）
 - 团队级：API key 设 budget alert
 - CI 上设月度上限

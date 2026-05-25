@@ -1,7 +1,7 @@
 ---
 title: Hooks 钩子系统
 tags: [claude-code, 配置, hooks]
-updated: 2026-05-21
+updated: 2026-05-25
 ---
 
 # Hooks 钩子系统
@@ -55,6 +55,8 @@ Hooks 系统围绕八个生命周期事件展开，覆盖了 Claude 工作流的
 ```
 
 `matcher` 用正则匹配工具名，`|` 表示"或"。hook 脚本通过环境变量拿到上下文（如 `$CLAUDE_FILE_PATH`、`$CLAUDE_TOOL_INPUT`）。脚本返回非零退出码表示拦截该操作。
+
+自 v2.1.133 起，Hooks 和 Bash 命令还会收到 `$CLAUDE_EFFORT`（值为 `low` / `medium` / `high`）和 JSON 输入里的 `effort.level` 字段。你可以根据当前 effort 级别调整 hook 行为——比如低 effort 时跳过耗时的格式化检查。
 
 ## 经典 hook 配方
 

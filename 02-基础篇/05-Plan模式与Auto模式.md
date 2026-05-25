@@ -1,7 +1,7 @@
 ---
 title: Plan 模式与 Auto 模式
 tags: [claude-code, 基础, 模式]
-updated: 2026-05-21
+updated: 2026-05-25
 ---
 
 # Plan 模式与 Auto 模式
@@ -79,6 +79,25 @@ Auto 不是"无脑全放行"。以下操作仍然会弹确认：
   }
 }
 ```
+
+### hard_deny 硬拒绝规则（v2.1.136+）
+
+Auto 模式的 classifier（由 Sonnet 担任）会根据语境判断是否放行。但有些操作你希望**无论如何都拦住**，不给 classifier 任何通融余地。这就是 `hard_deny`：
+
+```jsonc
+{
+  "settings": {
+    "autoMode": {
+      "hard_deny": [
+        "Bash(rm -rf*)",
+        "Bash(git push --force*)"
+      ]
+    }
+  }
+}
+```
+
+和 permissions 里的 `deny` 不同，`hard_deny` 专门针对 Auto 模式的自动放行逻辑——即使 classifier 认为安全，也会被无条件阻止。
 
 > [!warning]
 > Auto 模式下 Claude 会连续执行多步操作。如果中间某步跑偏了，后面的步骤可能在错误基础上继续。建议搭配 hooks 给关键操作加一道闸——详见 [[../04-配置与定制/04-Hooks钩子系统]]。

@@ -1,7 +1,7 @@
 ---
 title: Slash 命令一览
 tags: [claude-code, 基础, slash]
-updated: 2026-05-21
+updated: 2026-05-25
 ---
 
 # Slash 命令一览
@@ -16,7 +16,8 @@ updated: 2026-05-21
 |------|------|
 | `/clear` | 清空当前上下文（不退出登录） |
 | `/compact` | 压缩上下文（保留要点，丢冗余） |
-| `/resume` | 恢复上次会话 |
+| `/resume` | 恢复上次会话（可粘贴 PR URL 自动定位对应 session） |
+| `/goal` | 设定目标条件，Claude 会跨轮次持续工作直到满足（v2.1.139+） |
 | `/exit` | 退出 |
 | `/help` | 帮助 |
 
@@ -35,7 +36,9 @@ updated: 2026-05-21
 | `/config` | 打开配置 UI |
 | `/model` | 切换模型（Opus / Sonnet / Haiku） |
 | `/cost` | 查看本会话花了多少 token / 钱 |
+| `/usage` | 查看额度用量的**分类明细**（skills / subagents / plugins / 各 MCP server）（v2.1.149+） |
 | `/status` | 当前模型 / 模式 / 目录 / 权限 |
+| `/diff` | 查看当前会话的文件变更（支持方向键 / j/k / PgUp/PgDn 键盘滚动）（v2.1.149+） |
 
 ### 项目相关
 
@@ -43,6 +46,7 @@ updated: 2026-05-21
 | ------------------ | --------------------- |
 | `/init`            | 生成 CLAUDE.md（初始化项目说明） |
 | `/review`          | 审查当前 PR               |
+| `/code-review`     | 检查正确性 bug，可选 effort 级别（如 `/code-review high`）；`--comment` 发到 PR 行内评论（v2.1.147+，原 `/simplify`） |
 | `/security-review` | 安全视角审查                |
 
 ### 工具相关
