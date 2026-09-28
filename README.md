@@ -3,6 +3,14 @@
 > 一份从零基础到高阶玩法的 Claude Code 中文指南。
 > Claude Code 更新极快，本仓库按"框架 + 增量更新"的方式维护。
 
+## Overview (English)
+
+A Chinese-language field guide to Claude Code, written from daily use rather than translated from the docs.
+
+- **Covers:** installation and first run → daily use (context management, plan mode) → workflows (spec-driven development, TDD, review, debugging, long tasks and memory) → configuration (settings layers, CLAUDE.md, permissions, hooks) → MCP and extensions → subagents and parallel worktrees → CI automation → anti-patterns.
+- **Format:** about 60 notes in ten parts, organised as an Obsidian vault (backlinks, graph view) that also reads fine on GitHub.
+- **Maintenance:** maintained as a stable framework plus incremental updates. Chapters with major changes are flagged at the top, and the changelog section covers Claude Code up to v2.1.150.
+
 ## 说明
 
 这不是官方文档的翻译，就是我自己用 Claude Code 过程中顺手记下来的东西。官方文档写得挺全，但很多细节要自己踩过才知道——比如 context 什么时候会悄悄污染、hooks 的执行顺序为什么跟你想的不一样、MCP 连不上时该从哪里查。这些"踩坑笔记"散在各处很难找，所以整理成了这份指南。
