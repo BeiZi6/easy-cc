@@ -9,7 +9,7 @@ A Chinese-language field guide to Claude Code, written from daily use rather tha
 
 - **Covers:** installation and first run → daily use (context management, plan mode) → workflows (spec-driven development, TDD, review, debugging, long tasks and memory) → configuration (settings layers, CLAUDE.md, permissions, hooks) → MCP and extensions → subagents and parallel worktrees → CI automation → anti-patterns.
 - **Format:** about 60 notes in ten parts, organised as an Obsidian vault (backlinks, graph view) that also reads fine on GitHub.
-- **Maintenance:** kept up with Claude Code releases. Chapters with major changes are flagged at the top, and a changelog section tracks versions.
+- **Maintenance:** maintained as a stable framework plus incremental updates. Chapters with major changes are flagged at the top, and the changelog section covers Claude Code up to v2.1.150.
 
 ## 说明
 
